@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.navbar {
+    @apply absolute;
+}
+
+.nav-fixed {
+    @apply fixed bg-neutral-50 bg-opacity-90 border-b border-neutral-100 dark:border-slate-800;
+    backdrop-filter: blur(5px);
+    animation: coba .5s;
+}
+
+.navbar-nav {
+    height: 100vh;
+    backdrop-filter: blur(5px);
+}
+
+#dark-toggle:checked ~ label .toggle-circle {
+    @apply translate-x-3;
+}
+
+@keyframes coba {
+    0% {
+        top: -50px;
+    }
+    100% {
+        top: 0px;
+    }
+}
