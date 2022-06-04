@@ -17,6 +17,14 @@
     backdrop-filter: blur(5px);
 }
 
+::-webkit-scrollbar {
+    @apply w-3 dark:bg-slate-800 bg-yellow-500
+}
+
+::-webkit-scrollbar-thumb {
+    @apply w-3 dark:bg-slate-500 bg-yellow-300 hover:bg-yellow-200
+}
+
 #dark-toggle:checked ~ label .toggle-circle {
     @apply translate-x-3;
 }
